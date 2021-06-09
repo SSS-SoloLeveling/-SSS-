@@ -10,9 +10,9 @@ class TaskForm(ModelForm):
             'title': TextInput(attrs={
                 'class': 'form_control',
                 'placeholder': 'Введите ФИО'
-        }),
+            }),
             'task': TextInput(attrs={
                 'class': 'form_control',
                 'placeholder': 'Введите группу'}),
-        }
+            }
 

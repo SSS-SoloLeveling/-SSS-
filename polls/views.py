@@ -12,10 +12,12 @@ def index(request):
 def create(request):
     if request.method == 'POST':
         form = TaskForm(request.POST)
+        if form.is_valid():
+            form.save()
 
-    form = TaskForm()
+
     context = {
-            'form': form,
+            'form': TaskForm(),
     }
     return render(request, 'mysite/create.html', context)
 

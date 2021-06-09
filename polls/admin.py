@@ -2,4 +2,7 @@ from django.contrib import admin
 
 from .models import Task
 
-admin.site.register(Task)
+
+class SSS(admin.ModelAdmin):
+    search_fields=('title',)
+admin.site.register(Task, SSS)
