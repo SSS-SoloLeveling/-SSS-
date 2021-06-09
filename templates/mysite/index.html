@@ -43,7 +43,8 @@
     <p>{% for el in tasks %}
     <div class="'alert alert-warning mt-2"
          <h3>{{el.title}}</h3>
-        <p>{{el.task}}</p>
+        <p>{{el.task}}<br>
+        {{el.task2}}</p>
     </div>
     {%endfor%}</p>
     {% else %}
